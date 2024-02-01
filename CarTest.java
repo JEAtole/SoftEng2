@@ -3,11 +3,12 @@ public class CarTest {
     public static void main(String[] args){
 
         Car myCar = new Car.CarBuilder()
-            .brand("Mercedes - Benz")
-            .engineType("Diesel")
             .transmission("Automatic")
             .color("Violet")
-            .capacity(4).build();
+            .engineType("Diesel")
+            .capacity(4)
+            .brand("Mercedes - Benz")
+            .build();
         
         System.out.println("Car brand: " + myCar.getBrand());
         System.out.println("Car engine type: " + myCar.getEngineType());
